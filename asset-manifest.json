@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TALENTIO-FRONTEND-/static/css/main.4d84730a.css",
+    "main.js": "/TALENTIO-FRONTEND-/static/js/main.f271a3d1.js",
+    "static/js/488.6efa3360.chunk.js": "/TALENTIO-FRONTEND-/static/js/488.6efa3360.chunk.js",
+    "index.html": "/TALENTIO-FRONTEND-/index.html",
+    "main.4d84730a.css.map": "/TALENTIO-FRONTEND-/static/css/main.4d84730a.css.map",
+    "main.f271a3d1.js.map": "/TALENTIO-FRONTEND-/static/js/main.f271a3d1.js.map",
+    "488.6efa3360.chunk.js.map": "/TALENTIO-FRONTEND-/static/js/488.6efa3360.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d84730a.css",
+    "static/js/main.f271a3d1.js"
+  ]
+}
