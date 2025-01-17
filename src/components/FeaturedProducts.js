@@ -1,14 +1,30 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../App';
+import { CartContext } from '../App'; // Adjust the path based on your structure
 
 const FeaturedProducts = () => {
-  const { addToCart } = useContext(CartContext);
+  const { cart, setCart } = useContext(CartContext);
 
   const products = [
     { id: 1, name: 'Product 1', price: 100 },
     { id: 2, name: 'Product 2', price: 200 },
     { id: 3, name: 'Product 3', price: 300 },
   ];
+
+  // Add product to cart or update its quantity
+  const addToCart = (product) => {
+    setCart((prevCart) => {
+      const productExists = prevCart.find((item) => item.id === product.id);
+      if (productExists) {
+        return prevCart.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      } else {
+        return [...prevCart, { ...product, quantity: 1 }];
+      }
+    });
+  };
 
   return (
     <div className="p-4">
